@@ -5,6 +5,7 @@ if status is-interactive
     function fish_mode_prompt; end
     # Commands to run in interactive sessions can go here
     source $HOME/.config/fish/aliases.fish
+    clear
 end
 
 # functions
