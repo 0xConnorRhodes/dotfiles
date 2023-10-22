@@ -1,0 +1,4 @@
+# globally ignored
+.gitattributes
+LICENSE
+README.md
