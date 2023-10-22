@@ -5,6 +5,7 @@ alias cmd="SHELL=/usr/bin/fish chezmoi cd"
 alias bat="batcat"
 alias cat="batcat -p"
 alias ari="aria2c"
+alias fd="fdfind"
 
 # navigation
 alias j="__zoxide_z"
