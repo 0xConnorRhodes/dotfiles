@@ -1,7 +1,7 @@
 # programs
 alias e="nvim"
 alias cm="chezmoi"
-alias ccd="SHELL=/usr/bin/fish chezmoi cd"
+alias cmd="SHELL=/usr/bin/fish chezmoi cd"
 
 # navigation
 alias j="__zoxide_z"
@@ -12,3 +12,4 @@ alias gs="git status"
 
 # commands
 alias x=exit
+alias ms="mosh s"
