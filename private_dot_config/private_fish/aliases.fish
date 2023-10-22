@@ -2,7 +2,8 @@
 alias e="nvim"
 alias cm="chezmoi"
 alias cmd="SHELL=/usr/bin/fish chezmoi cd"
-alias cat="bat -p"
+alias bat="batcat"
+alias cat="batcat -p"
 alias ari="aria2c"
 
 # navigation
