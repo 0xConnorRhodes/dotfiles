@@ -2,6 +2,7 @@
 alias e="nvim"
 alias cm="chezmoi"
 alias cmd="SHELL=/usr/bin/fish chezmoi cd"
+alias cat="bat -p"
 
 # navigation
 alias j="__zoxide_z"
