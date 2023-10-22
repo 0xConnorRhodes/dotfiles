@@ -15,3 +15,12 @@ alias gs="git status"
 # commands
 alias x=exit
 alias ms="mosh s"
+
+# function
+function nf --wraps ls --description 'show latest file in directory'
+    ls -At1 . | sed '/\.DS_Store/d' | sed -n '1p'
+end
+
+function lnf --wraps ls --description 'show next to latest file in directory'
+    ls -At1 . | sed '/\.DS_Store/d' | sed -n '2p'
+end
