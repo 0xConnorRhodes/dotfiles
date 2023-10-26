@@ -3,4 +3,4 @@
 
 IP_ADDR=$(ip addr | grep inet | grep -v 127.0.0.1 | grep -v '::1' | awk '{print $2}' | cut --delimiter="/" --fields=1)
 
-hugo serve --bind $IP_ADDR --noHTTPCache
+hugo serve --bind $IP_ADDR --noHTTPCache --buildDrafts
