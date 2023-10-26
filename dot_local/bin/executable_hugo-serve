@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env fish
 # script o serve hugo on the first non-localhost ip address. Useful for publishing from within a container
 
-IP_ADDR=$(ip addr | grep inet | grep -v 127.0.0.1 | grep -v '::1' | awk '{print $2}' | cut --delimiter="/" --fields=1)
+set IP_ADDR (ip addr | grep inet | grep -v 127.0.0.1 | grep -v '::1' | awk '{print $2}' | cut --delimiter="/" --fields=1)
 
-hugo serve --bind $IP_ADDR --noHTTPCache --buildDrafts
+hugo serve --bind $IP_ADDR --noHTTPCache --buildDrafts $argv
