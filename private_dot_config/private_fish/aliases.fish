@@ -6,6 +6,7 @@ alias bat="batcat"
 alias cat="batcat -p"
 alias ari="aria2c"
 alias fd="fdfind"
+alias sn="screen -c $HOME/.config/screen/screenrc"
 
 # navigation
 alias j="__zoxide_z"
