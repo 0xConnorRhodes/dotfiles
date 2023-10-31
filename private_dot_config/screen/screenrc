@@ -1,0 +1,5 @@
+startup_message off
+
+# bind command key to alt-k
+register S ^A # auxiliary register
+bindkey "^[k" process S # Alt + x produces ^A and acts as command key
