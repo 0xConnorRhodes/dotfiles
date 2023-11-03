@@ -1,0 +1,4 @@
+#!/bin/sh
+# find edit
+
+nvim "$(fdfind -t f . | fzf)"
