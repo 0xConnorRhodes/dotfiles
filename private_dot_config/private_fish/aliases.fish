@@ -7,6 +7,8 @@ alias cat="batcat -p"
 alias ari="aria2c"
 alias fd="fdfind"
 alias sn="screen -c $HOME/.config/screen/screenrc"
+alias cat="batcat --style=plain --pager=none"
+alias ccat="/usr/bin/cat"
 
 # navigation
 alias j="__zoxide_z"
