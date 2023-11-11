@@ -1,9 +1,3 @@
 startup_message off
 autodetach on
 shell /usr/bin/fish
-
-# bind command key to alt-k
-register S ^A # auxiliary register
-bindkey "^[k" process S # Alt + k produces ^A and acts as command key
-bindkey "^[/" process S # alternate leader key combination accessible using only the left hand
-bindkey "^[\\" process S # note you must escape `\` to use it in the bindkey
