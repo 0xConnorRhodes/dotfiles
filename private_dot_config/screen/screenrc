@@ -1,5 +1,6 @@
 startup_message off
 autodetach on
+shell /usr/bin/fish
 
 # bind command key to alt-k
 register S ^A # auxiliary register
