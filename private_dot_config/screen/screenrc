@@ -4,3 +4,6 @@ shell /usr/bin/fish
 compacthist on
 scrollback 300000
 defscrollback 300000
+
+hardstatus alwaysfirstline
+hardstatus string '%{yk}%-Lw%{= yk}%50>%n%f* %t%{-}%+Lw'
