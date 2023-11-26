@@ -6,4 +6,4 @@ scrollback 300000
 defscrollback 300000
 
 hardstatus alwaysfirstline
-hardstatus string '%{yk}%-Lw%{= yk}%50>%n%f* %t%{-}%+Lw'
+hardstatus string '%{yk}%-Lw%{= yk}%n%f* %t%{-}%+Lw'
