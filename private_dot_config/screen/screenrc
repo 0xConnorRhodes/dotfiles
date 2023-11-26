@@ -1,3 +1,6 @@
 startup_message off
 autodetach on
 shell /usr/bin/fish
+compacthist on
+scrollback 300000
+defscrollback 300000
