@@ -8,8 +8,6 @@ defscrollback 300000
 hardstatus alwaysfirstline
 hardstatus string '%{yk}%-Lw%{= yk}%n%f* %t%{-}%+Lw'
 
-mousetrack on # allow clicking between panes to change focus
-
 # Window numbering starts at 1, not 0.
 bind c screen 1
 bind ^c screen 1
