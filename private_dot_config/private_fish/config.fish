@@ -9,6 +9,7 @@ if status is-interactive
 end
 
 source $HOME/.config/fish/env.fish
+source $HOME/.nix-profile/etc/profile.d/nix.fish 
 
 # functions
 source $HOME/.config/fish/functions/zoxide.fish
