@@ -32,3 +32,5 @@ end
 function lnf --wraps ls --description 'show next to latest file in directory'
     ls -At1 . | sed '/\.DS_Store/d' | sed -n '2p'
 end
+
+# vim:syntax=fish
