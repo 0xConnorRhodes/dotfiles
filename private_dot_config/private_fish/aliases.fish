@@ -2,13 +2,16 @@
 alias e="nvim"
 alias cm="chezmoi"
 alias cmd="SHELL=/usr/bin/fish chezmoi cd"
+alias ari="aria2c"
+alias sn="screen -c $HOME/.config/screen/screenrc"
+alias ccat="/usr/bin/cat"
+
+{{- if eq .chezmoi.osRelease.name "Ubuntu" }}
+alias cat="batcat --style=plain --pager=none"
 alias bat="batcat"
 alias cat="batcat -p"
-alias ari="aria2c"
 alias fd="fdfind"
-alias sn="screen -c $HOME/.config/screen/screenrc"
-alias cat="batcat --style=plain --pager=none"
-alias ccat="/usr/bin/cat"
+{{- end}}
 
 # navigation
 alias j="__zoxide_z"
