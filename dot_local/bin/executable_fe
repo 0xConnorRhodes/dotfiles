@@ -7,7 +7,4 @@ else
   FD_BIN="/usr/bin/fd"
 fi
 
-echo "FD_BIN is set to $FD_BIN"
-
-
 nvim "$($FD_BIN -t f . | fzf)"
