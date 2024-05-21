@@ -1,4 +1,13 @@
 #!/bin/sh
 # find edit
 
-nvim "$(fdfind -t f . | fzf)"
+if [ -f /usr/bin/fdfind ]; then
+  FD_BIN="/usr/bin/fdfind"
+else
+  FD_BIN="/usr/bin/fd"
+fi
+
+echo "FD_BIN is set to $FD_BIN"
+
+
+nvim "$($FD_BIN -t f . | fzf)"

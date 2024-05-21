@@ -1,5 +1,5 @@
 #!/usr/bin/env fish
-# script o serve hugo on the first non-localhost ip address. Useful for publishing from within a container
+# script to serve hugo on the first non-localhost ip address. Useful for publishing from within a container
 
 set IP_ADDR (ip addr | grep inet | grep -v 127.0.0.1 | grep -v '::1' | awk '{print $2}' | cut --delimiter="/" --fields=1)
 
