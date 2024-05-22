@@ -1,0 +1,64 @@
+# default shell, must be POSIX compatible
+set shell bash
+
+set shellopts '-eu'
+set previewer /home/connor/.config/lf/preview.sh
+
+# set internal field separator (IFS) to "\n" for shell commands
+# This is useful to automatically split file names in $fs and $fx properly
+set ifs "\n"
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 10
+
+# use enter for shell commands
+map <enter> shell
+
+# execute current file (must be executable)
+map x $$f
+map X !$f
+
+# file move/copy commands
+map y copy
+map d cut
+
+# use '<delete>' key for either 'trash' or 'delete' command
+map <backspace2> delete
+
+# extract the current file with the right command
+cmd extract ${{
+    set -f
+    case $f in
+        *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
+        *.tar.gz|*.tgz) tar xzvf $f;;
+        *.tar.xz|*.txz) tar xJvf $f;;
+        *.zip) unzip $f;;
+        *.rar) unrar x $f;;
+        *.7z) 7z x $f;;
+    esac
+}}
+
+# compress current file or selected files with zip
+cmd zip ${{
+    set -f
+    mkdir $1
+    cp -r $fx $1
+    zip -r $1.zip $1
+    rm -rf $1
+}}
+
+# fuzzy directory jump
+#cmd fzjump $cd $(fasd_d -d | awk '{ print $2 }' | fzf)
+cmd fzjump $lf -remote "send $id cd \"$(fasd -d | awk '{print $2 }' | fzf)\""
+map J push :fzjump<enter>
+
+map . set hidden!
+
+# sort commands
+map st :set sortby time; set reverse; set info time
+
+# folder shortcuts
+map gc cd ~/.config
+map gl cd ~/.local
+
+# vim:syntax=conf
