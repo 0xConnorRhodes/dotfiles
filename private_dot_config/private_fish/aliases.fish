@@ -5,15 +5,10 @@ alias cmd="SHELL=/usr/bin/fish chezmoi cd"
 alias ari="aria2c"
 alias sn="screen -c $HOME/.config/screen/screenrc"
 alias ccat="/usr/bin/cat"
-alias lfb=/usr/bin/lf
-alias lf=lfcd
-
-{{- if eq .chezmoi.osRelease.name "Ubuntu" }}
-alias cat="batcat --style=plain --pager=none"
-alias bat="batcat"
-alias cat="batcat -p"
-alias fd="fdfind"
-{{- end}}
+alias lfb="/usr/bin/lf"
+alias lf="lfcd"
+alias cat="bat --style=plain --pager=none"
+alias cat="bat -p"
 
 # navigation
 alias j="__zoxide_z"
@@ -34,5 +29,3 @@ end
 function lnf --wraps ls --description 'show next to latest file in directory'
     ls -At1 . | sed '/\.DS_Store/d' | sed -n '2p'
 end
-
-# vim:syntax=fish
