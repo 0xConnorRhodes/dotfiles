@@ -5,6 +5,8 @@ compacthist on
 scrollback 300000
 defscrollback 300000
 
+term screen-256color
+
 hardstatus alwaysfirstline
 hardstatus string '%{yk}%-Lw%{= yk}%n%f* %t%{-}%+Lw'
 
