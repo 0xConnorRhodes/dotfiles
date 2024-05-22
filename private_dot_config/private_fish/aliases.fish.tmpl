@@ -5,6 +5,8 @@ alias cmd="SHELL=/usr/bin/fish chezmoi cd"
 alias ari="aria2c"
 alias sn="screen -c $HOME/.config/screen/screenrc"
 alias ccat="/usr/bin/cat"
+alias lfb=/usr/bin/lf
+alias lf=lfcd
 
 {{- if eq .chezmoi.osRelease.name "Ubuntu" }}
 alias cat="batcat --style=plain --pager=none"
