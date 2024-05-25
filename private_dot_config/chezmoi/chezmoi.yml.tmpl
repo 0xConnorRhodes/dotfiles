@@ -1,4 +1,4 @@
-{{ if stat "/persistent/.secret/age-chezmoi-key.txt" }}
+{{ if stat ("/persistent/.secret/age-chezmoi-key.txt") }}
 encryption: age
 age:
   identity: /persistent/.secret/age-chezmoi-key.txt
