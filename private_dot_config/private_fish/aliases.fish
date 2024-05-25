@@ -18,7 +18,7 @@ alias ji="__zoxide_zi"
 alias gs="git status"
 
 # commands
-alias x=exit
+alias x="exit"
 alias ms="mosh s"
 
 # function
