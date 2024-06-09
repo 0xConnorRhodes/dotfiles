@@ -2,3 +2,8 @@
 .gitattributes
 LICENSE
 README.md
+# only on webtop
+{{- if ne .chezmoi.hostname "webtop" }}
+.config/icewm # note that the pattern is not dot_company-directory
+{{- end }}
+
