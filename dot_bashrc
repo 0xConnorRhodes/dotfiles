@@ -3,4 +3,6 @@ if [[ $- != *i* ]] ; then
     return
 fi
 
-exec /usr/bin/fish
+if [ -f /usr/bin/fish ]; then
+    exec /usr/bin/fish
+fi

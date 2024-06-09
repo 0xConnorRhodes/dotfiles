@@ -8,9 +8,4 @@ encryption: age
 age:
   identity: ~/.local/.secret/age-chezmoi-key.txt
   recipient: age12as4mvt87c0eylzy5zzuaw4j4dqmdtf5ynhnma3l4y37e3xldaus6gf3fu
-{{ else if stat (joinPath .chezmoi.homeDir "persistent/.secret/age-chezmoi-key.txt") }}
-encryption: age
-age:
-  identity: ~/persistent/.secret/age-chezmoi-key.txt
-  recipient: age12as4mvt87c0eylzy5zzuaw4j4dqmdtf5ynhnma3l4y37e3xldaus6gf3fu
 {{ end }}
