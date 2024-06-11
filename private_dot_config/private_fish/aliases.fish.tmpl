@@ -10,6 +10,14 @@ alias lf="lfcd"
 alias cat="bat --style=plain --pager=none"
 alias cat="bat -p"
 
+{{ if stat (joinPath .chezmoi.homeDir ".local/bin/ipython") }}
+alias ipy="ipython"
+{{ end }}
+{{ if stat (joinPath .chezmoi.homeDir ".local/bin/bpython") }}
+alias bpy="bpython"
+{{ end }}
+
+
 # navigation
 alias j="__zoxide_z"
 alias ji="__zoxide_zi"
@@ -29,3 +37,5 @@ end
 function lnf --wraps ls --description 'show next to latest file in directory'
     ls -At1 . | sed '/\.DS_Store/d' | sed -n '2p'
 end
+
+# vim:syntax=fish
