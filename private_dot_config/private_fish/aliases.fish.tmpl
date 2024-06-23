@@ -9,6 +9,7 @@ alias lfb="/usr/bin/lf"
 alias lf="lfcd"
 alias cat="bat --style=plain --pager=none"
 alias cat="bat -p"
+alias tk="lua $HOME/code/notes-scripts/tasks.lua"
 
 {{ if stat (joinPath .chezmoi.homeDir ".local/bin/ipython") }}
 alias ipy="ipython"
