@@ -9,8 +9,11 @@ alias lfb="/usr/bin/lf"
 alias lf="lfcd"
 alias cat="bat --style=plain --pager=none"
 alias cat="bat -p"
-alias tk="lua $HOME/code/notes-scripts/tasks.lua"
-alias ntk="lua $HOME/code/notes-scripts/new-task.lua"
+
+{{ if stat (joinPath .chezmoi.homeDir "code/notes-scripts/aliases.fish") }}
+# notes aliases
+source $HOME/code/notes-scripts/aliases.fish
+{{ end }}
 
 {{ if stat (joinPath .chezmoi.homeDir ".local/bin/ipython") }}
 alias ipy="ipython"
@@ -18,6 +21,7 @@ alias ipy="ipython"
 {{ if stat (joinPath .chezmoi.homeDir ".local/bin/bpython") }}
 alias bpy="bpython"
 {{ end }}
+
 
 
 # navigation
