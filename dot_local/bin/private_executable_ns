@@ -1,0 +1,12 @@
+#!/bin/sh
+# notes sync with git
+
+cd ~/notes
+
+git pull
+
+git add .
+
+git commit -m 'u'
+
+git push
