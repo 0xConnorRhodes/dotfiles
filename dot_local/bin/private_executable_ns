@@ -3,10 +3,10 @@
 
 cd ~/notes
 
-git pull
-
 git add .
 
 git commit -m 'u'
+
+git pull
 
 git push
