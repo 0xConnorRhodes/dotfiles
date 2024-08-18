@@ -7,7 +7,7 @@ alias sn="screen -c $HOME/.config/screen/screenrc"
 alias ccat="/usr/bin/cat"
 alias lfb="/usr/bin/lf"
 alias lf="lfcd"
-alias cat="bat --style=plain --pager=none"
+alias cat="bat --style=plain --pager=less"
 alias py="python3"
 
 {{ if stat (joinPath .chezmoi.homeDir "code/notes-scripts/aliases.fish") }}
