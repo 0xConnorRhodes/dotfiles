@@ -14,6 +14,15 @@
 # NOTE: this relies on alias lfb=/path/to/binary and alias lf=lfcd in your fish config
 # this alias has to be os-specific because it links to $(which lf) which is different on different systems
 
+
+{{ if eq .chezmoi.osRelease.id "nixos" }}
+alias lfb="/run/current-system/sw/bin/lf"
+{{ else }}
+alias lfb="/usr/bin/lf"
+{{ end }}
+
+alias lf="lfcd"
+
 function lfcd
     set tmp (mktemp)
     lfb -last-dir-path=$tmp $argv
