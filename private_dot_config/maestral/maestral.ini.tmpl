@@ -1,0 +1,3 @@
+{{ if eq .chezmoi.hostname "nixsrv" }}
+{{ join .chezmoi.sourceDir "private_dot_config/maestral/.nixsrv-maestral.ini.age" | include | decrypt }}
+{{end}}
