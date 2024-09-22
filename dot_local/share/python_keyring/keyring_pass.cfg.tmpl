@@ -1,0 +1,3 @@
+{{ if eq .chezmoi.hostname "devct" }}
+{{ join .chezmoi.sourceDir "dot_local/share/python_keyring/.devct-keyring_pass.cfg.age" | include | decrypt }}
+{{end}}
