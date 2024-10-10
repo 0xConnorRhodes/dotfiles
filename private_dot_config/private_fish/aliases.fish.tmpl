@@ -11,10 +11,8 @@ alias lua="lua5.4"
 alias rb="ruby"
 alias ipy="ipython"
 
-{{ if stat (joinPath .chezmoi.homeDir "code/notes-scripts/aliases.fish") }}
 # notes aliases
-source $HOME/code/notes-scripts/aliases.fish
-{{ end }}
+alias tk="ruby $HOME/code/notes-scripts/tasks-menu-pc.rb"
 
 {{ if stat (joinPath .chezmoi.homeDir ".local/bin/ipython") }}
 alias ipy="ipython"
@@ -22,8 +20,6 @@ alias ipy="ipython"
 {{ if stat (joinPath .chezmoi.homeDir ".local/bin/bpython") }}
 alias bpy="bpython"
 {{ end }}
-
-
 
 # navigation
 alias j="__zoxide_z"
