@@ -1,6 +1,4 @@
-{{ if eq .chezmoi.hostname "nixsrv" }}
-{{ join .chezmoi.sourceDir "private_dot_config/maestral/.nixsrv-maestral.ini.age" | include | decrypt }}
-{{ else if eq .chezmoi.hostname "devct" }}
+{{ if eq .chezmoi.hostname "devct" }}
 {{ join .chezmoi.sourceDir "private_dot_config/maestral/.devct-maestral.ini.age" | include | decrypt }}
 {{ else if eq .chezmoi.hostname "cronsrv" }}
 {{ join .chezmoi.sourceDir "private_dot_config/maestral/.cronsrv-maestral.ini.age" | include | decrypt }}
