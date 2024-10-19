@@ -2,4 +2,6 @@
 {{ join .chezmoi.sourceDir "dot_local/share/python_keyring/.devct-keyring_pass.cfg.age" | include | decrypt }}
 {{ else if eq .chezmoi.hostname "nixsrv" }}
 {{ join .chezmoi.sourceDir "dot_local/share/python_keyring/.nixsrv-keyring_pass.cfg.age" | include | decrypt }}
+{{ else if eq .chezmoi.hostname "cronsrv" }}
+{{ join .chezmoi.sourceDir "dot_local/share/python_keyring/.cronsrv-keyring_pass.cfg.age" | include | decrypt }}
 {{end}}
