@@ -22,5 +22,6 @@ return {
       }
     },
     disable_frontmatter = false,
+    ui = { enable = false },
   },
 }
