@@ -21,5 +21,6 @@ return {
         path = "~/notes",
       }
     },
+    disable_frontmatter = false,
   },
 }
