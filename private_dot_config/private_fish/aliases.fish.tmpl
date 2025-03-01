@@ -3,18 +3,13 @@ alias e="nvim"
 alias cm="chezmoi"
 alias ari="aria2c"
 alias cmd="SHELL='/usr/bin/env fish' chezmoi cd"
+alias cat="bat --style=plain --pager=less"
 alias sn="screen -c $HOME/.config/screen/screenrc"
 alias ccat="/usr/bin/cat"
 alias py="python3"
 alias lua="lua5.4"
 alias rb="ruby"
 alias ipy="ipython"
-
-{{ if eq .chezmoi.osRelease.id "ubuntu" }}
-alias cat="batcat --style=plain --pager=less"
-{{ else}}
-alias cat="bat --style=plain --pager=less"
-{{ end }}
 
 # notes aliases
 alias tk="ruby $HOME/code/notes-scripts/tasks-menu-pc.rb"
