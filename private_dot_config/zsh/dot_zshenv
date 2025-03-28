@@ -1,1 +1,2 @@
-export PATH="$HOME/.local/bin:$PATH"
+export CODE=$HOME/code
+export PATH="$HOME/.local/bin:$CODE/scripts:$PATH"
