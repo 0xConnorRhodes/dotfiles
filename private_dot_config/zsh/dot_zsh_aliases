@@ -1,0 +1,3 @@
+alias e="nvim"
+alias cm="chezmoi"
+alias cmd="chezmoi cd"
