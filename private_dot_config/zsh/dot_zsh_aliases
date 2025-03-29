@@ -3,3 +3,4 @@ alias cm="chezmoi"
 alias cmd="chezmoi cd"
 alias gs="git status"
 alias lazypodman='DOCKER_HOST=unix:///run/user/1000/podman/podman.sock lazydocker'
+alias x="exit"
