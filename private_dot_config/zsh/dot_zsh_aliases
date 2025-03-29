@@ -5,3 +5,7 @@ alias gs="git status"
 alias lazypodman='DOCKER_HOST=unix:///run/user/1000/podman/podman.sock lazydocker'
 alias sn="screen -c $HOME/.config/screen/screenrc"
 alias x="exit"
+
+# notes aliases
+alias tk="ruby $HOME/code/notes-scripts/tasks-menu-pc.rb"
+alias mt="ruby $HOME/code/notes-scripts/new-meeting.rb"
