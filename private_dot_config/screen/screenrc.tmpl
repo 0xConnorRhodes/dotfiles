@@ -1,12 +1,6 @@
 startup_message off
 autodetach on
 
-{{ if eq .chezmoi.osRelease.id "nixos" }}
-shell /run/current-system/sw/bin/fish
-{{ else }}
-shell /usr/bin/fish
-{{ end }}
-
 compacthist on
 scrollback 300000
 defscrollback 300000
