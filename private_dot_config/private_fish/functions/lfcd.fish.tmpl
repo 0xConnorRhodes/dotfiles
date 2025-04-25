@@ -15,11 +15,11 @@
 # this alias has to be os-specific because it links to $(which lf) which is different on different systems
 
 
-{{ if eq .chezmoi.osRelease.id "nixos" }}
-alias lfb="/run/current-system/sw/bin/lf"
-{{ else }}
-alias lfb="/usr/bin/lf"
-{{ end }}
+#{{ if eq .chezmoi.osRelease.id "nixos" }}
+#alias lfb="/run/current-system/sw/bin/lf"
+#{{ else }}
+#alias lfb="/usr/bin/lf"
+#{{ end }}
 
 alias lf="lfcd"
 
